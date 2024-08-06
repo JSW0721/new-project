@@ -1,1 +1,2 @@
 new file fisrt line
+second line to newfile
