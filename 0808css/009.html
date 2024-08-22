@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>009</title>
+  <style>
+    a{
+      color: orange;
+      text-decoration: none;
+    }
+    a:hover{
+      font-size: 2em;
+    }
+    a:visited{
+      color:red;
+    }
+    .box1 :first-child{
+      color:blueviolet;
+    }
+    .box1 :last-child{
+      color:cyan;
+    }
+    .box2 :nth-child(2){
+      color: violet;
+    }
+    .box2 :nth-child(even){/*작수인 요소 선택*/
+      color: purple;
+    }
+    .box2 :nth-child(odd){/*홀수인 요소 선택*/
+      color: yellow;
+    }
+    .box2 :nth-child(3n+1){/*홀수인 요소 선택*/
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+    <a href="https://www.naver.com">네이버</a>
+    <a href="https://jejuair.com">제주에어</a>
+    <a href="404notfound">404</a>
+
+    <div  class="box1">
+      <h1>hello world</h1>
+      <h2>hello world</h2>
+      <h3>hello world</h3>
+      <h1>hello world</h1>
+      <h2>hello world</h2>
+      <h3>hello world</h3>
+      <h1>hello world</h1>
+      <h2>hello world</h2>
+      <h3>hello world</h3>
+      </div>
+    <div class="box2">
+      <span>span</span>
+      <span>span</span>
+      <span>span</span>
+      <span>span</span>
+      <span>span</span>
+      <span>span</span>
+      <span>span</span>
+      <span>span</span>
+      <span>span</span>
+    </div>
+</body>
+</html>

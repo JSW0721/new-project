@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>008</title>
+  <style>
+    html  {
+      font-size: 8px;
+    }
+    .container{
+      font-size : 10px;
+    }
+    .container div{
+      border: 1px solid black;
+    }
+    .item1{/*부모요소의 폰트 사이즈 : 10px, 10px*2 = 20px*/
+      font-size: 2em;
+    }
+    .item2{/*root html 폰트 사이즈 : 8px, 8px*2 = 16px*/
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="item1">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Accusamus atque harum incidunt ipsa quis quo recusandae sint vel vero voluptate!
+    Aut consequatur est iusto laudantium, magnam magni omnis perferendis repudiandae!
+  </div>
+  <div class="item2">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Accusamus atque harum incidunt ipsa quis quo recusandae sint vel vero voluptate!
+    Aut consequatur est iusto laudantium, magnam magni omnis perferendis repudiandae!
+  </div>
+</div>
+</body>
+</html>

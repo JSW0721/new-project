@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>실습5</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      color: white;
+    }
+    .container{
+      width: 500px;
+      height: 400px;
+      background-color: black;
+
+      display:flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    header,section,aside,footer{
+      display: flex;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    .main{
+      flex: 1;
+      display: flex;
+      gap: 10px;
+    }
+    header{
+      box-sizing: border-box;
+      background-color: skyblue;
+      border: 5px solid blue;
+    }
+    section{
+      flex: 2;
+    }
+    aside{
+      flex: 1;
+      color: black;
+    }
+    footer{
+      box-sizing: border-box;
+      background-color: pink;
+      border: 5px solid blue;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>header</header>
+  <div class="main">
+    <section>section > article</section>
+    <aside>aside</aside>
+  </div>
+  <footer>footer</footer>
+</div>
+</body>
+</html>

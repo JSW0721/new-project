@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TASK1-정승원</title>
+<style>
+  .download{
+    width : 140px;
+    height : 50px;
+    background-color: #d97652;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Pretendard, sans-serif;
+    font-size: 16px;
+  }
+  .navi-a{
+    display: flex;
+    justify-content: space-around;
+  }
+  .a-href{
+    height: 20px;
+    font-family: Pretendard,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    gap: 30px;
+    text-decoration: none;
+    padding: 15px;
+    color: #000000;
+  }
+  .download-navi{
+    width : 140px;
+    height : 50px;
+    top: 26px;
+    left: 1460px;
+    background-color: #d97652;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Pretendard,sans-serif;
+    font-size: 16px;
+  }
+  img.head-logo{
+    width: 130px;
+    height: 40px;
+  }
+  .navi-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f2e9d8;
+    width: 100%;
+    height: 102px;
+  }
+  .header-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body{
+    margin: 50px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  header{
+    background-color: #f2e9d8;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #head1{
+    width: 695px;
+    height: 120px;
+    font-family: Pretendard,sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+    white-space: nowrap;
+  }
+  #head2{
+    width: 420px;
+    height: 86px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    Paragraph: 2px;
+    color: #000000;
+    white-space: nowrap;
+  }
+  #cat-box{
+    width: 415px;
+    height: 766px;
+  }
+  .div1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .lying-cat{
+    width :660px;
+    height: 390px;
+    border-radius: 30px;
+  }
+  .div1-1{
+    width: 510px;
+    height: 135px;
+    font-family: Pretendard,sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+  }
+  .div1-2{
+    width: 510px;
+    height: 40px;
+    font-family: Pretendard,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    Paragraph: 2px;
+    color: #000000;
+  }
+  .div2{
+    align-items: center;
+    display: grid;
+    place-items: center;
+  }
+  .div2-1{
+    width: 875px;
+    height: 60px;
+    font-family: Pretendard, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #d97652;
+    white-space: nowrap;
+  }
+  #colorchange{
+    color: #d97652;
+  }
+  .div2-2{
+    width: 710px;
+    height: 42px;
+    font-family: Pretendard,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    white-space: nowrap;
+  }
+  .img-set{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .img-style{
+    width: 378px;
+    height: 378px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,25%);
+  }
+  .div3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+  #div3-1{
+    font-family: Pretendard,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+  }
+  #div3-2{
+    width: 143px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #d97652;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 29px 15px 29px;
+    gap: 10px;
+  }
+  .px1{
+    width: 1280px;
+    height: 1px;
+    background-color: #c4c4c4;
+    display: flex;
+    margin: 0 auto;
+  }
+#where{
+  width: 263px;
+  height: 45px;
+  color: #000000;
+  font-family: Pretendard,sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  white-space: nowrap;
+}
+.address{
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: center;
+  text-align: left;
+  margin: 0 auto;
+}
+#address{
+  width: 395px;
+  height: 20px;
+  font-family: Pretendard,sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #606367;
+}
+  .map{
+    width: 1280px;
+    height: 520px;
+    border-radius: 12px;
+  }
+.subscribe{
+  width: 1280px;
+  height: 201px;
+  border-radius: 30px;
+  background-color: #263140;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#ss1{
+  font-family: Pretendard,sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: #ffffff;
+}
+  #ss2{
+    font-family: Pretendard,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #f2e9d8;
+  }
+.frame{
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 0;
+}
+  .frame img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  #cat-under{
+    color: #f2e9d8;
+    opacity: 0.6;
+  }
+.hodu-foot{
+  width: 226px;
+  height: 70px;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 102px;
+}
+.footer-logo{
+  width: 228px;
+  justify-content: space-between;
+}
+.logo{
+  width: 45px;
+  height: 45px;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="navi-bar">
+    <img src="./img/HODU_logo.png" alt="hodu-logo" class="head-logo">
+    <div class="navi-a">
+      <a href="" class="a-href">Home</a>
+      <a href="" class="a-href">About</a>
+      <a href="" class="a-href">Support</a>
+      <div class="download-navi">Download</div>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="header-text">
+      <p id="head1">Lorem ipsum is simply<br/>
+        dummy text of the printing and</p>
+      <p id="head2">Lorem ipsum is simply dummy text of the printing and<br/> typesetting industry.<br/>
+        Lorem ipsum has been the industry's standard dummy text <br/>ever since the 1500s when an unknown</p>
+      <div class="download">Download</div>
+    </div>
+    <img src="./img/cat_inthe_box.png" alt="cat_box" id="cat-box"/>
+  </div>
+</header>
+<div class="div1">
+  <img src="./img/lyingcat.png" alt="lying-cat" class="lying-cat"/>
+  <div>
+  <p class="div1-1">Lorem ipsum is simply dummy text of the printing and dummy text</p>
+  <p class="div1-2">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+  </div>
+</div>
+<div class="div2">
+  <p class="div2-1">dummy text of the printing and dummy</p>
+  <p class="div2-2">Lorem ipsum is simply <span id="colorchange">dummy text</span> of the printing and typesetting industry.<br/>
+    lorem ipsum has been the industry's standard dummy text ever since the 1500s when an unknown</p>
+</div>
+<div class="img-set">
+  <img src="./img/cat_on_tower.png" alt="cat on the cat tower" class="img-style">
+  <img src="./img/cat_back.png" alt="back" class="img-style">
+  <img src="./img/gazingcat_far.png" alt="gazing-f" class="img-style">
+</div>
+<div class="img-set">
+  <img src="./img/gazingcat_close.png" alt="gazing-c" class="img-style">
+  <img src="./img/gazingcat_middle.png" alt="gazing-m" class="img-style">
+  <img src="./img/yawningcat.png" alt="yawn" class="img-style">
+</div>
+<div class="div3">
+  <p id="div3-1">Continue exploring HODU</p>
+  <button type="button" id="div3-2">Show more</button>
+</div>
+<div class="px1"></div>
+<div class="address">
+  <p id="where">Where you’ll be</p>
+  <p id="address">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+  <img src="./img/map.png" alt="jejumap" class="map">
+</div>
+<div class="subscribe">
+  <div>
+    <p id="ss1">Subscribe to our Blog post</p>
+    <p id="ss2">Lorem ipsum is simply dummy text of the printing and typesetting industry.<br/>
+      lorem ipsum has been the industry's standard dummy text</p>
+  </div>
+    <form action="/submit" method="post">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">Submit</button>
+    </form>
+</div>
+<div class="frame">
+  <img src="./img/img.png" alt="cat" id="cat-under"/>
+</div>
+<footer>
+  <div>
+    <img src="./img/HODU-logo_foot.png" alt="hodu logo footer" class="hodu-foot">
+  </div>
+  <div class="footer-logo">
+    <img src="./img/icon-blog.png" alt="hodu logo footer" class="logo">
+    <img src="./img/icon-instagram.png" alt="hodu logo footer" class="logo">
+    <img src="./img/icon-facebook.png" alt="hodu logo footer" class="logo">
+    <img src="./img/icon-utube.png" alt="hodu logo footer" class="logo">
+  </div>
+</footer>
+</body>
+</html>

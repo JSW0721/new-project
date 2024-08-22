@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MAP&SET</title>
+</head>
+<body>
+<script>
+  let m  = new Map();
+  console.log(m);//어떠한 언어도 이렇게 비슷한 자료형을 가지고 있는 경우는 없다.
+
+  let m1 = new Map();
+  m1.set('하나','1');
+  m1.set(1,'one');
+  m1.set(true,1);
+  m1.set(false,0);
+
+  console.log(m);
+  console.log(m.get('하나'));
+  console.log(m.get(true));
+
+  const data = new Map().set('name', 'licat').set('age', 10).set('height', 180);
+
+  for (const value of data) {
+    console.log(value[0]);
+    console.log(value[1]);
+  }
+
+  for (const [key, value] of data) {
+    console.log(key);
+    console.log(value);
+  }
+
+  console.log([...data.keys()]);
+  console.log([...data.values()]);
+
+  // 배열을 Map으로 변환
+  let temp = new Map([
+    [1, 10],
+    [2, 20],
+    [3, 30],
+    [4, 40],
+  ]);
+
+  // 객체를 Map으로 변환
+  let temp2 = new Map(Object.entries({ one: 1, two: 2 }));
+</script>
+</body>
+</html>

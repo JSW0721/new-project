@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>004</title>
+  <style>
+    div{
+      width: 300px;
+      height: 200px;
+      border: 1px solid black;
+      margin-bottom: 300px;
+    }
+    .visible{
+      overflow: visible;
+    }
+    .hidden{
+      overflow: hidden;
+    }
+    .scroll{
+      overflow: scroll;
+    }
+    .auto{
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+영역을 벗어난 범위도 볼 수 있음.
+<div class="visible">
+  <h2>visible</h2>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut excepturi harum labore laborum placeat quas recusandae reprehenderit sapiente suscipit? Dolor doloribus earum natus nostrum odit porro reiciendis reprehenderit, voluptatibus!
+</div>
+영역을 벗어난 범위는 볼 수 없음.
+
+<div class="hidden">
+  <h2>hidden</h2>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore illum in neque possimus quae quisquam repudiandae, sint sunt! Ad atque aut autem blanditiis consequatur debitis quia saepe, sunt velit voluptatibus.
+</div>
+<div class="scroll">
+  <h2>scroll</h2>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa iure quis tenetur! Dolorem illo iure neque nihil quisquam voluptas. Assumenda aut cupiditate dolores eaque maxime nostrum provident repellat temporibus voluptas.
+</div>
+<div class="auto">
+  <h2>auto</h2>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid commodi ea enim facilis ipsum, labore molestiae necessitatibus, nulla odit officia optio perferendis praesentium, quaerat quidem quos recusandae temporibus voluptatem.
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>증감연산자</title>
+</head>
+<body>
+  <script>
+    for(let i = 0; i < 5 ; i++){
+      console.log(i);
+    }
+    for(let i = 0; i < 5 ; ++i){
+      console.log(i);
+    }
+    // +위치는 크게 상관없음. 결과는 대부분 같다.
+
+    console.log(`증감연산 : ${++num}`); // 4 (num을 먼저 증가시키고 출력)
+    console.log(`증감연산 : ${num++}`); // 4 (출력 후 num을 증가시킴, 결과적으로 num은 5)
+    console.log(`증감연산 : ${--num}`); // 4 (num을 먼저 감소시키고 출력)
+    console.log(`증감연산 : ${num--}`); // 4 (출력 후 num을 감소시킴, 결과적으로 num은 3)
+  </script>
+</body>
+</html>

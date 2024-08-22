@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>형변환</title>
+</head>
+<body>
+  <script>
+    //parseint()
+    console.log(parseInt('hello')); // NaN (문자열 'hello'는 숫자로 변환 불가)
+    console.log(parseInt(30b); // 30 (문자열 '30b'에서 숫자 부분만 변환)
+    console.log(parseFloat('45.4')); // 45.4 (문자열 '45.4'를 실수로 변환)
+
+    //toString(진수)-생략시 10진수
+    let num = 5;
+    console.log(num.toString()); // string (숫자 5를 문자열 '5'로 변환)
+    console.log((3).toString()); // '3' (숫자 3을 문자열 '3'로 변환)
+    console.log((3).toString(2)); // '11' (숫자 3을 2진수로 변환하여 '11'로 표현)
+    (5).toString();
+
+    //isNaN = 이거 숫자아님?
+    console.log(isNaN('5')); // false (문자열 '5'는 숫자로 변환 가능)
+    console.log(isNaN(3)); // false (숫자 3은 숫자)
+    console.log(isNaN('b3')); // true (문자열 'b3'는 숫자로 변환 불가)
+    console.log(isNaN('3b')); // true (문자열 '3b'는 숫자로 변환 불가)
+    console.log(isNaN(undefined)); // true (undefined는 숫자로 변환 불가)
+
+    console.log(Number.isNaN(undefined)); // false (undefined는 NaN이 아님)
+    console.log(Number.isNaN(null)); // false (null은 NaN이 아님)
+    console.log(Number.isNaN(NaN)); // true (NaN은 NaN)
+
+    //Math = 수학관련 내장 객제
+    console.log(Math.pow(2,3));//2의 3승
+    console.log(Math.sqrt(16)); // 4 (16의 제곱근)
+    console.log(Math.round(10.6)); // 11 (반올림)
+    console.log(Math.ceil(10.2)); // 11 (올림)
+    console.log(Math.floor(10.6)); // 10 (내림)
+    console.log(Math.random()); // 0부터 1 사이의 난수. 컴에서는 난수라는게 존재하지 않음.
+    console.log(Math.PI); // 1부터 10 사이의 난수
+  </script>
+</body>
+</html>

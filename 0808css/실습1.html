@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>실습1</title>
+</head>
+<style>
+  /* span 인라인레벨 요소 > 너비, 높이값 적용되지 않음 */
+  span {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+  }
+  div :nth-child(1) {
+    background-color: red;
+  }
+  div :nth-child(2) {
+    background-color: orange;
+  }
+  div :nth-child(3) {
+    background-color: yellow;
+  }
+  div :nth-child(4) {
+    background-color: greenyellow;
+  }
+  div :nth-child(5) {
+    background-color: royalblue;
+  }
+  div :nth-child(6) {
+    background-color: blue;
+  }
+  div :nth-child(7) {
+    background-color: blueviolet;
+  }
+
+  div :nth-child(even) {
+    color: #fff;
+  }
+
+  div :first-child,
+  div :last-child {
+    border: 10px solid black;
+  }
+
+  li:first-child::before {
+    content: "❤️";
+  }
+
+  li:not(:first-child)::before {
+    content: "💙";
+  }
+
+  li::after {
+    content: "강사님";
+    font-size: 10px;
+    color: gray;
+  }
+</style>
+<body>
+  <div>
+    <span>빨강</span>
+    <span>주황</span>
+    <span>노랑</span>
+    <span>초록</span>
+    <span>파랑</span>
+    <span>남색</span>
+    <span>보라</span>
+  </div>
+<br/>
+<ul>
+  <li >라이언 </li>
+  <li >본 </li>
+  <li >만 </li>
+  <li >마크</li>
+</ul>
+</body>
+</html>

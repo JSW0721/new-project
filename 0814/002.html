@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<bubtton id = 'btn'>hello world</bubtton>
+<script>
+/*  function $(el){
+    return document.querySelector(el);
+  }
+  const button = $('#btn');*/
+
+  const button = document.getElementById('btn');
+  button.addEventListener("click", function(){
+    console.log(this); //<button id="btn">Click me!</button>
+  });
+</script>
+</body>
+</html>

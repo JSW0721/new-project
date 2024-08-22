@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>논리연산자</title>
+</head>
+<body>
+  <script>
+    //중요!!!
+    let x = true;//1, 전기가 통하는가.
+    let y = false;//0, 전기가 통하지 않는가.
+    //&& 곱연산자
+    //|| 합연산자
+    //! 부정(not) 연산자
+
+    console.log(x && y); //모두 true여야만 true.
+    console.log(x || y); //둘중 하나만 true여도 true.
+
+    for (let i = 0 ; i <100 ; i++){
+      if (i % 3 == 0 && i % 5 == 0){
+        console.log(i);
+      }
+    }
+    for (let i = 0 ; i <100 ; i++){
+      if (i % 3 == 0 || i % 5 == 0){
+        console.log(i);
+      }
+    }
+    console.log(!true);
+    console.log(!false);
+    /*실무에서 쓰는 형태
+    !!''; = false
+    !!'  '; = true
+    !!0; = flase
+    !!1; = true
+    */
+  </script>
+</body>
+</html>

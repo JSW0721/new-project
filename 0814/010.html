@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM제어하기</title>
+  <style>
+    .blue {
+      background-color: blue;
+      color: white;
+    }
+  </style
+</head>
+<body>
+  <button class="hello">HELLO</button>
+  <script>
+    //앞에서는 텍스트만 수정읗 했지만,
+    //이벤트 추가, 클래스 제어, 요소 생성 및 삭제,속성제어등 다양한 DOM 기능 실습
+
+    //1. 이벤트 추가.
+    const myBtn = document.querySelector('button');
+
+    myBtn.addEventListener("click", () => {
+      console.log('Hello world')
+    });
+
+    // 2. 클래스 제어
+    // myBtn.classList.add('blue');
+    myBtn.addEventListener('click', function () {
+      // myBtn.classList.add("blue"); // 클래스를 추가합니다.
+      // myBtn.classList.remove("blue"); // 클래스를 제거합니다.
+      myBtn.classList.toggle('blue'); // 클래스를 토글합니다.
+      console.log(myBtn.classList.contains('blue')); // 클래스가 있는지 확인합니다.
+    });
+
+    //3. 요소제어.
+    // 이 데이터는 통신을 통해서 받은 데이터임.
+    const data = {
+      title : 'hellp',
+      content : 'world',
+      src : 'https://via.placeholder.com/300';
+      price: 3000
+    };
+    const section = document.createElement('section');
+    const name = document.createElement('h2');
+    const content = document.createElement('p');
+    const price = document.createElement('p');
+    const img = document.createElement('img');
+
+    //img.setAttribute('src', 'https://via.placeholder.com/300');
+    img.src = 'http://via.placeholder.com/300';
+    price.style.color = 'red';
+    //fomt-size -> fontSize JS에서 CSS 속성을 불러올때는 케밥 케이스에서 카멜 케이스로 바뀜
+    price.style.fontSize = '20px';
+
+    name.textContent = data.name;
+    content.textContent = data.content;
+    price.textContent = data.price;
+
+    section.appendChild(name);
+    section.appendChild(content);
+    section.appendChild(price);
+
+    //document.body.appendChild(section);
+    document.body.append(section);//appendChild와의 차이점은 노드뿐만 아니라,
+    // 여러개의 노드를 한번에, 그리고 텍스트도 자식 노드로 포함 시킬 수 있음.
+
+  </script>
+</body>
+</html>

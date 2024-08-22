@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>006</title>
+  <style>
+    section p{/*4,5,6<p>가 두꺼워짐 직계 뿐만 아니라 모든 자손들에 적용*/
+      font-weight: bold;
+    }
+    section > p{/*5,6<p>가 파래짐 직계만 적용*/
+      color: blue;
+    }
+    section ~ p{/* 일반 형제 선택자 : 기준이 되는 요소중에 뒤에 나오는 요소만 선택. 7,8,9 <p>에 밑줄*/
+      text-decoration: underline;
+    }
+    section + p{/* 인접 형제 선택자 : 기준되는 요소의 바로 뒤에 있는 요소만을 선택. 7만 바탕 색 추가*/
+      background-color: peru;
+         }
+  </style>
+</head>
+<body>
+  <p>lorem ipsum dolor sit amet</p>
+  <p>lorem ipsum dolor sit amet</p>
+  <p>lorem ipsum dolor sit amet</p>
+  <section>
+    <div>
+      <p>lorem ipsum dolor sit amet</p>
+    </div>
+    <p>lorem ipsum dolor sit amet</p>
+    <p>lorem ipsum dolor sit amet</p>
+  </section>
+  <p>lorem ipsum dolor sit amet</p>
+  <p>lorem ipsum dolor sit amet</p>
+  <p>lorem ipsum dolor sit amet</p>
+</body>
+</html>

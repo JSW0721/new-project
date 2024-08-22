@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>비교 연산자</title>
+</head>
+<body>
+  <script>
+    console.log(10>20);
+    console.log(10<20);
+    console.log(10>=20);
+    console.log(10<=20);
+
+    //타입을 검사하지 않음.
+    console.log(10 == 20);//false
+    console.log(10 == '10');//이게 true라고...?
+    //타입까지 검사함.
+    console.log(10 === 20);//false
+    console.log(10 === '10');//false
+
+    console.log(10 != 20); // 다르니? 응, 달라. => true
+    console.log(Infinity > 10);//true
+
+    let testBigNum = 12345678901234567890;
+    console.log(testBigNum + 1);//숫자가 잘못 표시됩니다.
+
+    let BigNum = 12345678901234567890n;
+    console.log(BigNum + 1);//숫자가 잘못 표시됩니다.
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>원시타입-문자열</title>
+</head>
+<body>
+<script>
+    let x =10;
+    x = 20;
+    // 문자열 자료형
+    let string1 = 'Hello';
+    let string2 = "World";
+
+    console.log(string1); // Hello
+    console.log(string2); // World
+    //특징1 : 순서가 있다. (0부터 시작)
+    let string3 = 'Hello World';
+    console.log(string3[0]); // H
+    console.log(string3[1]); // e
+    //특징2 : 문자 열 중 특정한 값을 변경 불가.
+    let string4 = 'Hello';
+    string4[0]='h';
+    console.log(string4); //Hello
+    //특징3 : 다양한 메소드가 있음. 속성도 가짐.
+    console.log(string4.length);//5
+    console.log(string4.toUpperCase());//Hello
+    //특장4 : 문자열을 합칠 수 있음.
+    let string5 = 'Hello';
+    let string6 = 'World';
+    console.log(string5 + string6); // HelloWorld
+</script>
+</body>
+</html>

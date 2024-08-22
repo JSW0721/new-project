@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM제어하기</title>
+  <style>
+    .blue {
+      background-color: blue;
+      color: white;
+    }
+  </style
+</head>
+<body>
+  <button class="hello">HELLO</button>
+  <script>
+
+    const data = {
+      title : 'hellp',
+      content : 'world',
+      src : 'https://via.placeholder.com/300';
+      price: 3000
+    };
+   document.body,innerHTML = `
+   <section>
+    <img src="${data.src}" alt="이미지">
+    <h2>${data.name}</h2>
+    <p>${data.content}</p>
+    <p>${data.price}</p>
+   </section>`;
+
+   //1번과 비교하여
+    //1,가독성 UP
+    //2.코드작성 난이도 DOWN
+    //3. 요소 컨트롤은 1번이 더 나음
+    //4. 재활용성도 1번이 더 나음
+    //5. 이벤트 같은 건 없어서 나중에 추가해 줘야함.
+
+  </script>
+</body>
+</html>

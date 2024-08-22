@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>숫자 자료형</title>
+</head>
+<body>
+  <script>
+    console.log(`10 + 3 = ${10 + 3}`);
+    console.log(`10 - 3 = ${10 - 3}`);
+    console.log(`10 / 3 = ${10 / 3}`);
+    //부동 소수점 문제
+    //0.1 + 0.2 = 0.30000000004
+    //0.1을 2진법으로 표현하면 무한대수가 나옴.
+    //무한대수 + 무한대수 = 무한대수 => 에러남.
+    //decima.js 라이브러리를 사용하면 해결.
+    console.log(`10 * 3 = ${10 * 3}`);
+    console.log(`10 ** 3 = ${10 ** 3}`); // 10의 3승
+    console.log(`10 % 3 = ${10 % 3}`); // 나머지
+
+    console.log(-2); // -2 (음수로 변환)
+    console.log(-(-2)); // 2 (양수로 변환)
+    console.log(+4); // 4 (양수로 유지)
+    console.log(+'4'); // 4 (문자열 '4'를 숫자 4로 변환)
+    parseInt('4');//위의 케이스는 형변환이므로 이거 쓰자.
+
+    //증감 연산자 - 대기업에서는 혼란을 가중시킨다고 쓰지 말라 함. ++num =>  num+
+  </script>
+</body>
+</html>

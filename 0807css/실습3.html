@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>실습3</title>
+</head>
+<body>
+<!-- 연습문제1: 유데미나 인프런같은 서비스를 만들고 있어요. 검색창을 구현할겁니다. 알맞은 메서드를 구현하세요. -->
+<form action="search" method="get">
+  <label for="text">검색어</label>
+  <input type="text"  id="text"/>
+  <button>검색</button>
+</form>
+<hr/>
+<!-- 연습문제2: 공개 게시판에 게시물을 올리는 코드를 작성해야 합니다. 알맞은 메서드를 구현하세요.
+     코드 같은 대용량 데이터를 전송할때는 post가 적합-->
+<form action="" method="post">
+  <label for="code">코드작성</label>
+  <input type="text" name="code" id="code" width="100"/>
+  <input type="submit" value="upload"/>
+</form>
+<hr/>
+<!-- 연습문제3: 회원가입을 구현하려고 합니다. 알맞은 메서드를 구현하세요. -->
+<form>
+  <label for="reg_id">아이디 : </label>
+  <input type="text" name="id" id="reg_id"/>
+  <label for="reg_password">비밀번호 : </label>
+  <input type="password" name="password" id="reg_password"/>
+  <input type="submit" value="가입하기"/>
+</form>
+<hr/>
+<!-- 연습문제4: 로그인을 구현하려고 합니다. 알맞은 메서드를 구현하세요. -->
+<form action="/logim" method="post">
+  <label for="id4">아이디</label>
+  <input type="text" name="id" id="id4"/>
+  <label for="password4">비밀번호</label>
+  <input type="password" name="password" id="password4"/>
+  <input type="submit" value="로그인"/>
+</form>
+<hr/>
+<!-- 연습문제5: 항공권 검색을 하는 코드를 작성하게 되었습니다. 알맞은 메서드를 구현하세요.  -->
+<form action="search" method="get">
+  <label for="depcity">출발지</label>
+  <input type="text" name="depcity" id="depcity"/>
+  <label for="destcity">도착지</label>
+  <input type="text" name="destcity" id="destcity"/>
+  <label for="depday">촐발하는 날</label>
+  <input type="date" name="depday" id="depday"/>
+  <label for="backday">돌아오는 날</label>
+  <input type="date" name="depcity" id="backday"/>
+  <button>검색</button>
+</form>
+</body>
+</html>
