@@ -48,23 +48,22 @@ img.head-logo{
   align-items: center;
   justify-content: space-around;
   background-color: #f2e9d8;
-  width: 100%;
+  width: 100vw;
   height: 102px;
 }
 .header-main{
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 body{
-  margin: 50px;
-  gap: 50px;
   display: flex;
   flex-direction: column;
 }
 header{
   background-color: #f2e9d8;
-  width: 100%;
+  width: 100vw;
   justify-content: space-around;
 }
 #head1{
@@ -95,6 +94,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .lying-cat{
   width :660px;
@@ -124,6 +125,8 @@ header{
   align-items: center;
   display: grid;
   place-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .div2-1{
   width: 875px;
@@ -150,11 +153,17 @@ header{
   color: #000000;
   white-space: nowrap;
 }
+.div-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .img-set{
   display: flex;
   justify-content: space-between;
   width: 1280px;
-  margin: 0 auto;
+  margin: 50px;
 }
 .img-style{
   width: 378px;
@@ -167,6 +176,7 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 50px;
 }
 #div3-1{
   font-family: Pretendard,sans-serif;
@@ -176,11 +186,13 @@ header{
   white-space: nowrap;
   display: flex;
   align-items: center;
+  margin: 50px;
 }
 #div3-2{
   width: 143px;
   height: 50px;
   border-radius: 40px;
+  border: none;
   background-color: #d97652;
   color: #ffffff;
   display: flex;
@@ -223,11 +235,14 @@ header{
   font-size: 16px;
   line-height: 20px;
   color: #606367;
+  margin-top: 0;
 }
 .map{
   width: 1280px;
   height: 520px;
   border-radius: 12px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .subscribe{
   width: 1280px;
@@ -238,7 +253,6 @@ header{
   justify-content: space-around;
   align-items: center;
   margin: 20px auto;
-
 }
 .sub-text{
   width: 471px;
@@ -252,6 +266,7 @@ header{
   font-size: 36px;
   line-height: 45px;
   color: #ffffff;
+  margin: 0 auto;
 }
 #ss2{
   font-family: Pretendard,sans-serif;
@@ -260,6 +275,7 @@ header{
   line-height: 18px;
   color: #f2e9d8;
   white-space: nowrap;
+  margin-top: 30px;
 }
 .frame{
   width: 100%;
@@ -286,9 +302,19 @@ header{
   border-radius: 60px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
 }
+#label{
+  width: 24px;
+  height: 24px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
 input{
+  display: flex;
+  align-items: center;
+  flex: 1;
   font-family: Pretendard,sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -317,7 +343,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 100vw;
   height: 102px;
 }
 .footer-logo{
@@ -327,4 +353,46 @@ footer{
 .logo{
   width: 45px;
   height: 45px;
+}
+.modal {
+  display: none; /* 처음에는 보이지 않도록 설정 */
+  position: fixed;
+  z-index: 1000; /* 다른 요소들보다 위에 표시되도록 높은 값 설정 */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+}
+
+/* 버튼 스타일링 */
+.open-modal-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
