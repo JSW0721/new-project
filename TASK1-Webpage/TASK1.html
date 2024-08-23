@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>TASK1-정승원</title>
   <link rel="stylesheet" href="TASK1_style.css">
+  <script src="TASK1_script.js"></script>
 </head>
 <body>
 <header>
@@ -39,15 +40,17 @@
   <p class="div2-2">Lorem ipsum is simply <span id="colorchange">dummy text</span> of the printing and typesetting industry.<br/>
     lorem ipsum has been the industry's standard dummy text ever since the 1500s when an unknown</p>
 </div>
-<div class="img-set">
-  <img src="./img/cat_on_tower.png" alt="cat on the cat tower" class="img-style">
-  <img src="./img/cat_back.png" alt="back" class="img-style">
-  <img src="./img/gazingcat_far.png" alt="gazing-f" class="img-style">
-</div>
-<div class="img-set">
-  <img src="./img/gazingcat_close.png" alt="gazing-c" class="img-style">
-  <img src="./img/gazingcat_middle.png" alt="gazing-m" class="img-style">
-  <img src="./img/yawningcat.png" alt="yawn" class="img-style">
+<div class="div-img">
+  <div class="img-set">
+    <img src="./img/cat_on_tower.png" alt="cat on the cat tower" class="img-style">
+    <img src="./img/cat_back.png" alt="back" class="img-style">
+    <img src="./img/gazingcat_far.png" alt="gazing-f" class="img-style">
+  </div>
+  <div class="img-set">
+    <img src="./img/gazingcat_close.png" alt="gazing-c" class="img-style">
+    <img src="./img/gazingcat_middle.png" alt="gazing-m" class="img-style">
+    <img src="./img/yawningcat.png" alt="yawn" class="img-style">
+  </div>
 </div>
 <div class="div3">
   <p id="div3-1">Continue exploring HODU</p>
@@ -67,9 +70,21 @@
   </div>
     <form action="/submit" method="post" class="form">
       <label for="email" id="label"><img src="./img/mail.png" alt="mail"></label>
-      <input type="email" id="email" name="email" required placeholder="Enter your e-mail address">
+      <input type="email" id="email" name="email" placeholder="Enter your e-mail address" required>
       <button type="submit" class="sub-btn">Subscribe</button>
     </form>
+</div>
+
+<!-- 모달 열기 버튼 -->
+<button class="open-modal-btn">Open Modal</button>
+
+<!-- 모달 -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <p>This is a modal window. You can add any content here.</p>
+  </div>
+
 </div>
 <div class="frame">
   <img src="img/hodu_under.png" alt="cat" id="cat-under"/>
