@@ -18,3 +18,12 @@ window.addEventListener('click', function(event) {
     modal.style.display = "none";
   }
 });
+
+//호버버튼 스크롤
+const scrollup = document.getElementById("scrollup");
+scrollup.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,//가야하는 위치
+    behavior: "smooth"//부드럽게 이동
+  });
+});
