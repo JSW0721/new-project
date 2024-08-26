@@ -333,7 +333,7 @@ input{
   font-size: 16px;
   line-height: 20px;
   align-content: center;
-  padding: 10px;
+  cursor: pointer;
 }
 .hodu-foot{
   width: 226px;
@@ -354,45 +354,62 @@ footer{
   width: 45px;
   height: 45px;
 }
+/* 모달 CSS */
 .modal {
   display: none; /* 처음에는 보이지 않도록 설정 */
   position: fixed;
   z-index: 1000; /* 다른 요소들보다 위에 표시되도록 높은 값 설정 */
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
 }
-
 .modal-content {
-  background-color: #fff;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  text-align: center;
+  background-image: url('img/sub_back.png');
+  background-size: 600px 400px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 30px;
+  width: 600px;
+  height: 400px;
+  align-items: center;
   position: relative;
 }
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
+#sub-cat{
+  width: 110px;
+  height: 112px;
+  top: 60px;
+  left: 245px;
+}
+#ms1{
+  font-family: Pretendard,sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: #d97652;
+}
+#ms2{
+  font-family: Pretendard,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.modal-close-btn {
+  width: 183px;
+  height: 50px;
+  border-radius: 40px;
+  color: #ffffff;
+  background-color: #d97652;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
 .close-btn:hover,
 .close-btn:focus {
   color: black;
-}
-
-/* 버튼 스타일링 */
-.open-modal-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
 }

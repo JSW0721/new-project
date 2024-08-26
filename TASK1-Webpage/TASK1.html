@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>TASK1-정승원</title>
   <link rel="stylesheet" href="TASK1_style.css">
-  <script src="TASK1_script.js"></script>
 </head>
 <body>
 <header>
@@ -28,6 +27,9 @@
     <img src="./img/cat_inthe_box.png" alt="cat_box" id="cat-box"/>
   </div>
 </header>
+<!-- 헤더로 너무 크게 묶은거 아닌가? -->
+
+<!-- 누워 있는 고양이 구역 -->
 <div class="div1">
   <img src="./img/lyingcat.png" alt="lying-cat" class="lying-cat"/>
   <div>
@@ -40,6 +42,8 @@
   <p class="div2-2">Lorem ipsum is simply <span id="colorchange">dummy text</span> of the printing and typesetting industry.<br/>
     lorem ipsum has been the industry's standard dummy text ever since the 1500s when an unknown</p>
 </div>
+
+<!-- 고양이 사진 구역-->
 <div class="div-img">
   <div class="img-set">
     <img src="./img/cat_on_tower.png" alt="cat on the cat tower" class="img-style">
@@ -56,12 +60,16 @@
   <p id="div3-1">Continue exploring HODU</p>
   <button type="button" id="div3-2">Show more</button>
 </div>
+
+<!-- 주소와 지도 -->
 <div class="px1"></div>
 <div class="address">
   <p id="where">Where you’ll be</p>
   <p id="address">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
   <img src="./img/map.png" alt="jejumap" class="map">
 </div>
+
+<!-- 구독 -->
 <div class="subscribe">
   <div class="sub-text">
     <p id="ss1">Subscribe to our Blog post</p>
@@ -75,17 +83,17 @@
     </form>
 </div>
 
-<!-- 모달 열기 버튼 -->
-<button class="open-modal-btn">Open Modal</button>
-
 <!-- 모달 -->
 <div id="modal" class="modal">
   <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <p>This is a modal window. You can add any content here.</p>
+    <img src="./img/sub-cat.png" alt="shy hodu" id="sub-cat"/>
+    <p id="ms1">Thank you</p>
+    <p id="ms2">Lorem Ipsum is siply dummy text of the printing industry.</p>
+    <div class="modal-close-btn">OK! I Love HODU</div>
   </div>
-
 </div>
+
+<!-- 지도 구역이랑 붙고 구독div가 이 접선 위애 올라와야 하는데 어렵네. -->
 <div class="frame">
   <img src="img/hodu_under.png" alt="cat" id="cat-under"/>
 </div>
@@ -100,5 +108,8 @@
     <img src="./img/icon-utube.png" alt="hodu logo footer" class="logo">
   </div>
 </footer>
+<script src="TASK1_script.js">
+  //DOM의 로딩이 끝날 때까지 기다리기 위해 js스크립트를 body맨 끝에 위치.
+</script>
 </body>
 </html>
