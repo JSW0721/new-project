@@ -2,9 +2,23 @@ const modal = document.getElementById("modal"); //불러올 파라메터 모달 
 const openModalBtn = document.querySelector(".sub-btn");//모달을 불러올 오픈모달버튼 파라메터 정의
 const closeModalBtn = document.querySelector(".modal-close-btn");//모달을 닫을 클로즈모달버튼 파라메터 정의
 
-// 모달 열기
-openModalBtn.addEventListener('click', function() {
-  modal.style.display = "block";
+document.querySelector(".form").addEventListener("submit", function(event) {
+  // 이메일 입력 필드 선택
+  const emailInput = document.getElementById("email").value;
+
+  // 이메일 형식 확인을 위한 정규표현식 (기본적인 형식 검증)
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // 이메일 형식이 맞지 않으면
+  if (!emailPattern.test(emailInput)) {
+    event.preventDefault();  // 폼 제출을 막음
+    alert("Please enter a valid email address.");  // 경고창 표시
+  } else {
+    event.preventDefault();  // 폼 제출 막고 모달 열기
+    openModalBtn.addEventListener('click', function() {
+      modal.style.display = "block";
+    });
+  }
 });
 
 // 모달 닫기 (닫기 버튼 클릭 시)

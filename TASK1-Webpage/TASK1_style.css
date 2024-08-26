@@ -10,6 +10,7 @@
   font-family: Pretendard, sans-serif;
   font-size: 16px;
 }
+
 .navi-a{
   display: flex;
   justify-content: space-around;
@@ -358,24 +359,27 @@ footer{
 }
 /* 모달 CSS */
 .modal {
-  display: none; /* 처음에는 보이지 않도록 설정 */
-  position: fixed;
+  display: none; /* 처음에는 안보이게 */
   z-index: 1000; /* 다른 요소들보다 위에 표시되도록 높은 값 설정 */
-  width: 100%;
-  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
   background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
-}
+
+  }
 .modal-content {
+  width: 600px;
+  height: 400px;
+  border: none;
+  border-radius: 30px;
   background-image: url('img/sub_back.png');
   background-size: 600px 400px;
   display: flex;
   flex-direction: column;
-  border: none;
-  border-radius: 30px;
-  width: 600px;
-  height: 400px;
   align-items: center;
-  position: relative;
+  margin: auto;
 }
 #sub-cat{
   width: 110px;
