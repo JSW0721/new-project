@@ -1,5 +1,6 @@
 const modal = document.getElementById("modal"); //불러올 파라메터 모달 정의
 const openModalBtn = document.querySelector(".sub-btn");//모달을 불러올 오픈모달버튼 파라메터 정의
+const openModalBtn2 = document.querySelector(".sub-btn2");//모달을 불러올 오픈모달버튼 파라메터 정의
 const closeModalBtn = document.querySelector(".modal-close-btn");//모달을 닫을 클로즈모달버튼 파라메터 정의
 
 document.querySelector(".form").addEventListener("submit", function(event) {
@@ -16,6 +17,9 @@ document.querySelector(".form").addEventListener("submit", function(event) {
   } else {
     event.preventDefault();  // 폼 제출 막고 모달 열기
     openModalBtn.addEventListener('click', function() {
+      modal.style.display = "block";
+    });
+    openModalBtn2.addEventListener('click', function() {
       modal.style.display = "block";
     });
   }
@@ -41,3 +45,9 @@ scrollup.addEventListener("click", function() {
     behavior: "smooth"//부드럽게 이동
   });
 });
+
+//모바일 버전 상단 메뉴 열기
+function togglemenu() {
+  var naviA = document.querySelector('navi-a');
+  naviA.classList.toggle('open');
+}

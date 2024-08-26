@@ -10,6 +10,9 @@
 <header>
   <div class="navi-bar">
     <img src="./img/HODU_logo.png" alt="hodu-logo" class="head-logo">
+    <div class="m-menu-btn" onclick="togglemenu()">
+      <img src="./img/m-menu.png" alt="mobile menu button" id="m-menu">
+    </div>
     <div class="navi-a">
       <a href="" class="a-href">Home</a>
       <a href="" class="a-href">About</a>
@@ -19,12 +22,12 @@
   </div>
   <div class="header-main">
     <div class="header-text">
-      <p id="head1">Lorem ipsum is simply<br/>
-        dummy text of the printing and</p>
-      <p id="head2">Lorem ipsum is simply dummy text of the printing and<br/> typesetting industry.<br/>
-        Lorem ipsum has been the industry's standard dummy text <br/>ever since the 1500s when an unknown</p>
-      <div class="download">Download</div>
+      <h1 id="head1">Lorem ipsum is simply
+        dummy text of the printing and</h1>
+      <p id="head2">Lorem ipsum is simply dummy text of the printing and typesetting industry.<br/>
+        Lorem ipsum has been the industry's standard dummy text ever since the 1500s when an unknown</p>
     </div>
+    <div class="download">Download</div>
     <img src="./img/cat_inthe_box.png" alt="cat_box" id="cat-box"/>
   </div>
 </header>
@@ -74,13 +77,14 @@
 <div class="subscribe">
   <div class="sub-text">
     <p id="ss1">Subscribe to our Blog post</p>
-    <p id="ss2">Lorem ipsum is simply dummy text of the printing and typesetting industry.<br/>
+    <p id="ss2">Lorem ipsum is simply dummy text of the printing and typesetting industry.
       lorem ipsum has been the industry's standard dummy text</p>
   </div>
     <form action="/submit" method="post" class="form">
       <label for="email" id="label"><img src="./img/mail.png" alt="mail"></label>
       <input type="email" id="email" name="email" placeholder="Enter your e-mail address" required>
       <button type="submit" class="sub-btn">Subscribe</button>
+      <button type="submit" class="sub-btn2">Subscribe</button>
     </form>
 </div>
 
