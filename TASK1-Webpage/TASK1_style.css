@@ -53,7 +53,7 @@ img.head-logo{
   height: 102px;
 }
 .m-menu-btn{
-  display: block;
+  display: none;
 }
 .header-main{
   width: 100vw;
@@ -78,6 +78,7 @@ header{
   font-size: 48px;
   line-height: 60px;
   color: #000000;
+  white-space: nowrap;
 }
 #head2{
   width: 420px;
@@ -206,6 +207,7 @@ header{
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  white-space: nowrap;
 }
 .px1{
   width: 1280px;
@@ -243,6 +245,7 @@ header{
   line-height: 20px;
   color: #606367;
   margin-top: 0;
+  white-space: pre;
 }
 .map{
   width: 1280px;
@@ -359,6 +362,11 @@ footer{
   width: 100vw;
   height: 102px;
 }
+.footer-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .footer-logo{
   width: 228px;
   justify-content: space-between;
@@ -444,8 +452,11 @@ footer{
   width:50px;
   height:50px;
 }
+.footer-menu-group{
+  display: none;
+}
 /*여기서 부터는 모바일 화면*/
-@media (max-width: 390px){
+@media (max-width: 400px){
   body{
     display: flex;
     flex-direction: column;
@@ -466,7 +477,8 @@ footer{
   .navi-a{
     display: none;
   }
-  #m-menu{
+  .m-menu-btn{
+    display: block;
     width: 32px;
     height: 32px;
   }
@@ -474,7 +486,7 @@ footer{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     justify-content: center;
   }
   #head1{
@@ -486,6 +498,7 @@ footer{
     line-height: 30px;
     color: #000000;
     text-align:center;
+    white-space: pre;
   }
   #head2{
     width: 270px;
@@ -508,6 +521,7 @@ footer{
     color: #ffffff;
     font-family: Pretendard, sans-serif;
     font-size: 14px;
+    align-content: center;
   }
   #cat-box{
     width: 197px;
@@ -634,6 +648,7 @@ footer{
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+    white-space: nowrap;
   }
   .px1{
     width: 326px;
@@ -671,6 +686,7 @@ footer{
     line-height: 20px;
     color: #606367;
     margin-top: 0;
+    white-space: pre;
   }
   .map{
     width: 326px;
@@ -687,34 +703,33 @@ footer{
     background-color: #263140;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
+    text-align: left;
   }
   .sub-text{
-    width: 187px;
-    height: 60px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
   }
   #ss1{
+    width: 187px;
+    height: 60px;
     font-family: Pretendard,sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     color: #ffffff;
-    text-align: left;
-    white-space: normal;
+    float: left;
+    white-space: pre;
   }
   #ss2{
+    width: 262px;
+    height: 72px;
     font-family: Pretendard,sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: #f2e9d8;
-    margin-top: 30px;
-    text-align: left;
-    white-space: normal;
+    margin: auto;
+    white-space: wrap;
   }
   .frame{
     width: 100%;
@@ -747,7 +762,7 @@ footer{
   #label{
     width: 18px;
     height: 18px;
-    margin-left: 30px;
+    margin-left: 15px;
     margin-right: 10px;
   }
   input{
@@ -764,6 +779,7 @@ footer{
     display: none;
   }
   .sub-btn2{
+    display: block;
     width: 115px;
     height: 40px;
     border-radius: 40px;
@@ -789,6 +805,9 @@ footer{
     width: 100vw;
     height: 178px;
   }
+  .footer-group{
+
+  }
   .footer-logo{
     width: 228px;
     justify-content: space-between;
@@ -796,6 +815,17 @@ footer{
   .logo{
     width: 32px;
     height: 32px;
+  }
+  .footer-menu-group{
+    display: block;
+    font-family: Pretendard,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    gap: 30px;
+    text-decoration: none;
+    padding: 15px;
+    color: #000000;
   }
   /* 모달 CSS */
   .modal {
@@ -810,28 +840,28 @@ footer{
 
   }
   .modal-content {
-    width: 600px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border: none;
     border-radius: 30px;
     background-image: url('img/sub_back.png');
-    background-size: 600px 400px;
+    background-size: 300px 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
   }
   #sub-cat{
-    width: 110px;
-    height: 112px;
-    top: 60px;
-    left: 245px;
+    width: 60px;
+    height: 62px;
+    top: 40px;
+    left: 120px;
   }
   #ms1{
     font-family: Pretendard,sans-serif;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 45px;
+    font-size: 24px;
+    line-height: 30px;
     color: #d97652;
   }
   #ms2{
@@ -840,15 +870,15 @@ footer{
     font-size: 14px;
     line-height: 18px;
   }
-  .modal-close-btn {
-    width: 183px;
-    height: 50px;
+  .modal-close-btn{
+    width: 158px;
+    height: 40px;
     border-radius: 40px;
     color: #ffffff;
     background-color: #d97652;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -859,19 +889,9 @@ footer{
     color: black;
   }
   #scrollup{
-    width:50px;
-    height:50px;
-    z-index:500;
-    cursor: pointer;
-    position:fixed;
-    right: 20px;
-    bottom: 20px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    border-color: #c4c4c4;
+    display: none;
   }
   #hover{
-    width:50px;
-    height:50px;
+    display: none;
   }
 }
