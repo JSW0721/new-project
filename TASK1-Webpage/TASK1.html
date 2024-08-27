@@ -10,10 +10,13 @@
 <header>
   <div class="navi-bar">
     <img src="./img/HODU_logo.png" alt="hodu-logo" class="head-logo">
-    <div class="m-menu-btn" onclick="togglemenu()">
+    <div class="m-menu-btn" onclick="toggleMenu()">
       <img src="./img/m-menu.png" alt="mobile menu button" id="m-menu">
     </div>
-    <div class="navi-a">
+    <div class="navi-mobile" id="mobile-menu">
+      <div class="close-tab" onclick="closeTab()">
+        <img src="./img/tab-close.png" alt="close tab button" id="close-tab">
+      </div>
       <a href="" class="a-href">Home</a>
       <a href="" class="a-href">About</a>
       <a href="" class="a-href">Support</a>
@@ -87,8 +90,34 @@ Blog post</p>
       <input type="email" id="email" name="email" placeholder="Enter your e-mail address" required>
       <button type="submit" class="sub-btn">Subscribe</button>
     </form>
-  <button type="submit" class="sub-btn2">Subscribe</button>
 </div>
+<!-- 지도 구역이랑 붙고 구독div가 이 접선 위애 올라와야 하는데 어렵네. -->
+<!-- 08/28 subscribe 밑으로 집어넣는건 어떻게 했는데 풋터랑 간격 차이나네.-->
+<div class="frame">
+  <img src="img/hodu_under.png" alt="cat" id="cat-under"/>
+</div>
+<div id="scrollup">
+  <img src="./img/hover.png" alt="tap to top" id="hover">
+</div>
+<footer>
+  <div class="footer-group">
+  <div>
+    <img src="./img/HODU-logo_foot.png" alt="hodu logo footer" class="hodu-foot">
+  </div>
+  <div class="footer-logo">
+    <img src="./img/icon-blog.png" alt="hodu logo footer" class="logo">
+    <img src="./img/icon-instagram.png" alt="hodu logo footer" class="logo">
+    <img src="./img/icon-facebook.png" alt="hodu logo footer" class="logo">
+    <img src="./img/icon-utube.png" alt="hodu logo footer" class="logo">
+  </div>
+  </div>
+  <div class="footer-menu-group">
+    <a href="javascript:void(0);">About</a>
+    <a href="javascript:void(0);">Blog</a>
+    <a href="javascript:void(0);">Support</a>
+    <a href="javascript:void(0);">Terms of Use</a>
+  </div>
+</footer>
 
 <!-- 모달 -->
 <div id="modal" class="modal">
@@ -100,31 +129,6 @@ Blog post</p>
   </div>
 </div>
 
-<!-- 지도 구역이랑 붙고 구독div가 이 접선 위애 올라와야 하는데 어렵네. -->
-<!-- 08/28 subscribe 밑으로 집어넣는건 어떻게 했는데 풋터랑 간격 차이나네.-->
-<div class="frame">
-  <img src="img/hodu_under.png" alt="cat" id="cat-under"/>
-</div>
-<div id="scrollup">
-  <img src="./img/hover.png" alt="tap to top" id="hover">
-</div>
-<footer>
-  <div class="footer-group">
-    <img src="./img/HODU-logo_foot.png" alt="hodu logo footer" class="hodu-foot">
-  </div>
-  <div class="footer-logo">
-    <img src="./img/icon-blog.png" alt="hodu logo footer" class="logo">
-    <img src="./img/icon-instagram.png" alt="hodu logo footer" class="logo">
-    <img src="./img/icon-facebook.png" alt="hodu logo footer" class="logo">
-    <img src="./img/icon-utube.png" alt="hodu logo footer" class="logo">
-  </div>
-  <div class="footer-menu-group">
-    <a href="">About</a>
-    <a href="">Blog</a>
-    <a href="">Support</a>
-    <a href="">Terms of Use</a>
-  </div>
-</footer>
 <script src="TASK1_script.js">
   //DOM의 로딩이 끝날 때까지 기다리기 위해 스크립트를 body 끝에 위치.
 </script>

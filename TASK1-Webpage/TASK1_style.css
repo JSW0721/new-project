@@ -52,7 +52,8 @@ img.head-logo{
   width: 100vw;
   height: 102px;
 }
-.m-menu-btn{
+.m-menu-btn,
+.close-tab{
   display: none;
 }
 .header-main{
@@ -347,25 +348,20 @@ input{
   align-content: center;
   cursor: pointer;
 }
-.sub-btn2{
-   display: none;
- }
 .hodu-foot{
   width: 226px;
   height: 70px;
 }
 footer{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   width: 100vw;
   height: 102px;
 }
 .footer-group{
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  margin: 0 auto;
+  justify-content: space-around;
 }
 .footer-logo{
   width: 228px;
@@ -379,13 +375,10 @@ footer{
 .modal {
   display: none; /* 처음에는 안보이게 */
   z-index: 1000; /* 다른 요소들보다 위에 표시되도록 높은 값 설정 */
-  justify-content: center;
-  align-items: center;
-  position: fixed;
+  position: fixed; /* 화면에 고정 */
   width: 100vw;
   height: 100vw;
   background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
-
   }
 .modal-content {
   width: 600px;
@@ -404,6 +397,7 @@ footer{
   height: 112px;
   top: 60px;
   left: 245px;
+  margin-top: 60px;
 }
 #ms1{
   font-family: Pretendard,sans-serif;
@@ -411,12 +405,15 @@ footer{
   font-size: 36px;
   line-height: 45px;
   color: #d97652;
+  margin-bottom: 5px;
 }
 #ms2{
   font-family: Pretendard,sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  margin-top: 5px;
+  margin-bottom:30px;
 }
 .modal-close-btn {
   width: 183px;
@@ -474,8 +471,29 @@ footer{
     width: 92px;
     height: 28px;
   }
-  .navi-a{
-    display: none;
+  .navi-mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 289px;
+    height: 820px;
+    background-color: #263140;
+    display: none; /* 기본적으로 숨김 */
+    flex-direction: column;
+    padding: 20px;
+  }
+  .a-href{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  #close-tab{
+    width: 32px;
+    height: 32px;
+  }
+  .navi-mobile.open{
+    display: flex;
   }
   .m-menu-btn{
     display: block;
@@ -486,8 +504,13 @@ footer{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
+  }
+  .header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   #head1{
     width: 251px;
@@ -499,6 +522,8 @@ footer{
     color: #000000;
     text-align:center;
     white-space: pre;
+    justify-content: center;
+    align-items: center;
   }
   #head2{
     width: 270px;
@@ -516,12 +541,9 @@ footer{
     background-color: #d97652;
     border-radius: 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     color: #ffffff;
     font-family: Pretendard, sans-serif;
     font-size: 14px;
-    align-content: center;
   }
   #cat-box{
     width: 197px;
@@ -776,9 +798,6 @@ footer{
     border: none;
   }
   .sub-btn{
-    display: none;
-  }
-  .sub-btn2{
     display: block;
     width: 115px;
     height: 40px;
@@ -798,15 +817,13 @@ footer{
     height: 34px;
   }
   footer{
-    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     width: 100vw;
-    height: 178px;
+    height: 102px;
   }
   .footer-group{
-
+    display: flex;
+    flex-direction: column;
   }
   .footer-logo{
     width: 228px;
@@ -817,15 +834,18 @@ footer{
     height: 32px;
   }
   .footer-menu-group{
+    text-decoration: none !important;
     display: block;
+    width: 80px;
+    height: 120px;
+    flex-direction: column;
     font-family: Pretendard,sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     gap: 30px;
-    text-decoration: none;
     padding: 15px;
-    color: #000000;
+    color: #767676;
   }
   /* 모달 CSS */
   .modal {
@@ -869,6 +889,8 @@ footer{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+    text-align: center;
+    margin-bottom: 10px;
   }
   .modal-close-btn{
     width: 158px;
@@ -883,6 +905,7 @@ footer{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin: 0 auto;
   }
   .close-btn:hover,
   .close-btn:focus {
